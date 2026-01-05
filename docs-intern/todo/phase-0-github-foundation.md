@@ -149,7 +149,7 @@
   ```
 
 ### 0.3.2 Feature Request Template
-- [ ] Create `.github/ISSUE_TEMPLATE/feature_request.md`:
+- [x] Create `.github/ISSUE_TEMPLATE/feature_request.md`:
   ```
   ---
   name: Feature request
