@@ -29,7 +29,7 @@ CTX is a developer-centric desktop application built with Tauri v2, combining a 
 
 ## Project Structure
 
-```
+```text
 CTX/
 ├── .ctx/              # Hidden storage (Markdown + Frontmatter)
 ├── src/               # Frontend (React + TypeScript)
