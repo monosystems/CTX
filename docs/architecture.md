@@ -79,7 +79,7 @@ Bring Your Own Key (BYOK) AI integration using async-openai.
 
 ## Data Flow
 
-```
+```text
 ┌─────────────┐     IPC      ┌─────────────┐
 │   React     │ ◄──────────► │    Rust     │
 │  Frontend   │   Commands   │   Backend   │
