@@ -118,7 +118,7 @@
 ## 0.3 Issue & PR Templates
 
 ### 0.3.1 Bug Report Template
-- [ ] Create `.github/ISSUE_TEMPLATE/bug_report.md`:
+- [x] Create `.github/ISSUE_TEMPLATE/bug_report.md`:
   ```
   ---
   name: Bug report
