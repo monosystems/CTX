@@ -1,0 +1,77 @@
+# ===================
+# OS Generated Files
+# ===================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# ===================
+# Editor/IDE
+# ===================
+.idea/
+.vscode/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.xcodeproj
+
+# ===================
+# Node.js / Package Manager
+# ===================
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===================
+# Rust / Tauri
+# ===================
+target/
+Cargo.lock
+**/*.rs.bk
+
+# ===================
+# CTX Project Specific
+# ===================
+.ctx/                  # Hidden storage directory for local-first data
+docs-intern/           # Internal documentation (not for public release)
+
+# ===================
+# Environment & Secrets
+# ===================
+.env
+.env.local
+.env.*.local
+*.local
+
+# ===================
+# Testing & Coverage
+# ===================
+coverage/
+.nyc_output/
+*.lcov
+
+# ===================
+# Misc
+# ===================
+*.pem
+.cache/
