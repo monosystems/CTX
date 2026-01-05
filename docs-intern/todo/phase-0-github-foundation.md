@@ -170,7 +170,7 @@
   ```
 
 ### 0.3.3 Pull Request Template
-- [ ] Create `.github/PULL_REQUEST_TEMPLATE.md`:
+- [x] Create `.github/PULL_REQUEST_TEMPLATE.md`:
   ```
   ---
   name: Pull request
