@@ -9,9 +9,9 @@
 ## 0.1 Repository Foundation
 
 ### 0.1.1 Initialize Git Repository
-- [ ] Initialize git repo: `git init`
-- [ ] Create initial commit with empty project structure
-- [ ] Create `.gitignore`:
+- [x] Initialize git repo: `git init`
+- [x] Create initial commit with empty project structure
+- [x] Create `.gitignore`:
   ```
   # OS files
   .DS_Store
@@ -36,34 +36,34 @@
   .ctx/
   *.log
   ```
-- [ ] Add remote: `git remote add origin <url>`
+- [x] Add remote: `git remote add origin <url>`
 
 ### 0.1.2 Configure Git Settings
-- [ ] Set default branch to `main`
-- [ ] Configure git user.name and user.email
-- [ ] Enable git hook validation (pre-commit)
-- [ ] Set branch protection rules (main branch)
+- [x] Set default branch to `main`
+- [x] Configure git user.name and user.email
+- [x] Enable git hook validation (pre-commit)
+- [x] Set branch protection rules (main branch)
 
 ### 0.1.3 Create Repository on GitHub
-- [ ] Create public repository "ctx" on GitHub
-- [ ] Add remote URL
-- [ ] Push initial commit
-- [ ] Enable Discussions
-- [ ] Enable Wiki (or use docs/)
-- [ ] Configure Project board
+- [x] Create public repository "ctx" on GitHub
+- [x] Add remote URL
+- [x] Push initial commit
+- [x] Enable Discussions
+- [x] Enable Wiki (or use docs/)
+- [x] Configure Project board (repo has projects enabled)
 
 ---
 
 ## 0.2 Essential Files
 
 ### 0.2.1 LICENSE
-- [ ] Choose license: MIT or Apache 2.0 (recommend MIT for broad adoption)
-- [ ] Create LICENSE file
-- [ ] Add license header to source files
-- [ ] Verify license compatibility (Tauri, Rust crates, NPM packages)
+- [x] Choose license: MIT or Apache 2.0 (recommend MIT for broad adoption) - **AGPLv3 chosen**
+- [x] Create LICENSE file
+- [ ] Add license header to source files (Greenfield: no source files yet)
+- [ ] Verify license compatibility (Tauri, Rust crates, NPM packages) - **Deferred to Phase 1+**
 
 ### 0.2.2 README.md
-- [ ] Create comprehensive README:
+- [x] Create comprehensive README:
   ```
   # CTX
   
@@ -94,12 +94,12 @@
   
   ## License
   
-  MIT
+  AGPLv3
   ```
-- [ ] Add badges (build status, license, version)
+- [x] Add badges (build status, license, version)
 
 ### 0.2.3 CONTRIBUTING.md
-- [ ] Create CONTRIBUTING.md with:
+- [x] Create CONTRIBUTING.md with:
   - How to file issues
   - How to submit PRs
   - Coding standards (link to style guides)
@@ -109,9 +109,9 @@
   - PR review process
 
 ### 0.2.4 CODE_OF_CONDUCT.md
-- [ ] Create CODE_OF_CONDUCT.md
-- [ ] Use Contributor Covenant v2.1
-- [ ] Link from README and CONTRIBUTING
+- [x] Create CODE_OF_CONDUCT.md
+- [x] Use Contributor Covenant v2.1
+- [x] Link from README and CONTRIBUTING
 
 ---
 
