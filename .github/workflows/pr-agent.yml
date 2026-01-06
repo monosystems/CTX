@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: MonoSystems PR Agent
-        uses: monosystems/pr-agent@main
+        uses: monosystems/pr-agent@14d54aa
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENROUTER_API_BASE: "https://api.minimax.io/anthropic/v1"
