@@ -27,6 +27,7 @@ jobs:
       - name: Run PR Agent
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENROUTER_API_BASE: ${{ secrets.OPENROUTER_API_BASE }}
           OPENROUTER_KEY: ${{ secrets.OPENROUTER_KEY }}
           CONFIG_MODEL: "MiniMax-M2.1"
