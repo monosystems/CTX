@@ -1,44 +1,22 @@
 name: PR Agent
-
 on:
   pull_request:
     types: [opened, synchronize, reopened]
   issue_comment:
     types: [created]
-
 permissions:
   contents: read
   pull-requests: write
   issues: write
-  id-token: write
-
 jobs:
   pr_agent_job:
     runs-on: ubuntu-latest
     steps:
-      - name: PR Agent action step
+      - name: MonoSystems PR Agent
         uses: monosystems/pr-agent@main
-        with:
-          # Configuration via environment variables (recommended for secrets)
         env:
-          # GitHub Token (auto-provided in GitHub Actions)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-          # =============================================
-          # LLM CONFIGURATION - OpenRouter
-          # =============================================
-
           OPENROUTER_API_BASE: "https://api.minimax.io/anthropic/v1"
           OPENROUTER_KEY: ${{ secrets.OPENROUTER_KEY }}
-
-          # Model selection (e.g., from OpenRouter model list)
           CONFIG_MODEL: "MiniMax-M2.1"
-
-          # Language for PR responses
           CONFIG_RESPONSE_LANGUAGE: "en-US"
-
-          # Enable/disable specific tools
-          # CONFIG_PR_REVIEWER: true
-          # CONFIG_DESCRIBE: true
-          # CONFIG_IMPROVE: true
-          # CONFIG_ASK: true
