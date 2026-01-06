@@ -2,32 +2,22 @@
 
 # Feature changes
 feature.*:
-  - 'src/**'
-  - 'src-tauri/**'
-
-# Bug fixes
-fix.*:
-  - 'src/**'
-  - 'src-tauri/**'
-
-# Documentation changes
-docs.*:
-  - '*.md'
-  - 'docs/**'
-  - '.github/**'
-
-# CI/CD changes
-ci.*:
-  - '.github/workflows/**'
-  - '.github/dependabot.yml'
-  - '.github/labeler.yml'
-
-# Frontend changes
-frontend:
   - changed-files:
     - any-glob-to-any-file: 'src/**'
 
-# Backend changes
-backend:
+# Bug fixes
+fix.*:
   - changed-files:
-    - any-glob-to-any-file: 'src-tauri/**'
+    - any-glob-to-any-file: 'src/**'
+
+# Documentation changes
+docs.*:
+  - changed-files:
+    - any-glob-to-any-file: '*.md'
+    - any-glob-to-any-file: 'docs/**'
+
+# CI/CD changes
+ci.*:
+  - changed-files:
+    - any-glob-to-any-file: '.github/workflows/**'
+    - any-glob-to-any-file: '.github/dependabot.yml
