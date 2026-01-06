@@ -118,7 +118,7 @@
 ## 0.3 Issue & PR Templates
 
 ### 0.3.1 Bug Report Template
-- [ ] Create `.github/ISSUE_TEMPLATE/bug_report.md`:
+- [x] Create `.github/ISSUE_TEMPLATE/bug_report.md`:
   ```
   ---
   name: Bug report
@@ -149,7 +149,7 @@
   ```
 
 ### 0.3.2 Feature Request Template
-- [ ] Create `.github/ISSUE_TEMPLATE/feature_request.md`:
+- [x] Create `.github/ISSUE_TEMPLATE/feature_request.md`:
   ```
   ---
   name: Feature request
@@ -170,7 +170,7 @@
   ```
 
 ### 0.3.3 Pull Request Template
-- [ ] Create `.github/PULL_REQUEST_TEMPLATE.md`:
+- [x] Create `.github/PULL_REQUEST_TEMPLATE.md`:
   ```
   ---
   name: Pull request
