@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - name: Build Release
+        run: npm run tauri build
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: src-tauri/target/release/bundle/**
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -208,7 +208,7 @@
 ### 0.4.1 GitHub Actions Workflows
 
 #### Build & Test (main + PRs)
-- [ ] Create `.github/workflows/build.yml`:
+- [x] Create `.github/workflows/build.yml`:
   ```yaml
   name: Build & Test
   
@@ -252,7 +252,7 @@
   ```
 
 #### Release Workflow
-- [ ] Create `.github/workflows/release.yml`:
+- [x] Create `.github/workflows/release.yml`:
   ```yaml
   name: Release
   
@@ -282,12 +282,12 @@
   ```
 
 #### Auto Label PRs
-- [ ] Create `.github/workflows/label-prs.yml`:
+- [x] Create `.github/workflows/label-prs.yml`:
   - Auto-label based on changed files
   - Use `actions/labeler` or custom script
 
 ### 0.4.2 Configure Dependabot
-- [ ] Create `.github/dependabot.yml`:
+- [x] Create `.github/dependabot.yml`:
   ```yaml
   version: 2
   updates:

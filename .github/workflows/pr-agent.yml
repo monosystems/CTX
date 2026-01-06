@@ -1,4 +1,4 @@
-name: PR Agent
+name: MonoSystems PR Agent
 on:
   pull_request:
     types: [opened, synchronize, reopened]
@@ -12,11 +12,28 @@ jobs:
   pr_agent_job:
     runs-on: ubuntu-latest
     steps:
-      - name: MonoSystems PR Agent
-        uses: monosystems/pr-agent@main
+      - name: Checkout PR Agent
+        uses: actions/checkout@v4
+        with:
+          repository: monosystems/pr-agent
+          token: ${{ secrets.GH_PAT_TOKEN }}  # Personal Access Token mit repo scope
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - name: Install PR Agent
+        run: pip install -e .
+      - name: Run PR Agent
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OPENROUTER_API_BASE: "https://api.minimax.io/anthropic/v1"
+          GITHUB_USER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENROUTER_API_BASE: ${{ secrets.OPENROUTER_API_BASE }}
           OPENROUTER_KEY: ${{ secrets.OPENROUTER_KEY }}
           CONFIG_MODEL: "MiniMax-M2.1"
-          CONFIG_RESPONSE_LANGUAGE: "en-US"
+        run: |
+          if [ "${{ github.event_name }}" == "pull_request" ]; then
+            monosystems-pr-agent --pr_url "${{ github.event.pull_request.html_url }}" review
+          else
+            monosystems-pr-agent --pr_url "${{ github.event.comment.html_url }}" review
+          fi
