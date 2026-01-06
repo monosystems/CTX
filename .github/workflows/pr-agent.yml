@@ -32,7 +32,7 @@ jobs:
           CONFIG_MODEL: "MiniMax-M2.1"
         run: |
           if [ "${{ github.event_name }}" == "pull_request" ]; then
-            pr-agent --pr_url "${{ github.event.pull_request.html_url }}" review
+            monosystems-pr-agent --pr_url "${{ github.event.pull_request.html_url }}" review
           else
-            pr-agent --pr_url "${{ github.event.comment.html_url }}" review
+            monosystems-pr-agent --pr_url "${{ github.event.comment.html_url }}" review
           fi
